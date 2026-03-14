@@ -208,7 +208,9 @@ The risk-free return is set by default to 0%, but this can be adjusted through t
 - *Transactions overview*: A table displaying the monthly earnings, comprising dividends, interest, or both individually. The year can be adjusted using a spin button located at the top of the widget.
 
 - *Monthly earnings*:  A table displaying the monthly earnings. The year should be set with the context menu.
-- *Earnings per month*, *Earnings per quarter*, and *Earnings per year*: Graphical representation of the earnings per month, quarter or per year. 
+- *Upcoming dividends*: A table displaying the upcoming dividends, sorted by date. The ex-date and the payment date are shown for each security that has a dividend in the coming month. The data is loaded from [DivvyDiary](https://divvydiary.com/en/settings) if the security in your portfolio has an ISIN and you have stored a DivvyDiary API key in the [Settings](../../../help/preferences.md). You can also find this info in the Information pane of a security under the [Events](../../../view/securities/all-securities.md#information-pane) tab.
+- *Earnings per month*, *Earnings per quarter*, and *Earnings per year*: Graphical representation (bar chart) of the earnings per month, quarter or per year.
+- *Earnings by taxonomy*: Graphical representation (doughnut) of the earnings by taxonomy.
 
 ### Trades
 
