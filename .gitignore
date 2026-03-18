@@ -5,6 +5,4 @@ test.md
 .idea
 .github/copilot-instructions.md
 .gitignore
-.vscode
-portfolio-help.code-workspace
-.continue
+.zed/
