@@ -32,7 +32,7 @@ Figure: Context menu. {class=align-right style="width:20%"}
 
 If you selected an empty taxonomy, you must first add categories and subcategories before assigning securities to them. Use the `Add new classification` context menu to create a new classification (see Figure 3).  If you select a subcategory, the new classification will be created within it. The categories can be reordered by simply dragging and dropping them to a new location. To delete a selected category or list, use the context menu.
 
-Selected lists can be sorted by: `Type and Name`, `Type and Actual Value`, `Name`, or `Actual Value`. As shown in Figure 2, each taxonomy category has an assigned color, which can be changed using the context menu.
+Selected lists can be sorted by: `Type and Name`, `Type and Value`, `Name`, or `Value`. As shown in Figure 2, each taxonomy category has an assigned color, which can be changed using the context menu.
 
 To expand a category list, click the :fontawesome-solid-angle-right: icon to the left of it, which will change to a :fontawesome-solid-angle-down: icon. Click the downward-pointing caret to collapse the list. To expand or collapse all categories at once, use the context menu and select `Expand all` or `Collapse all`. 
 

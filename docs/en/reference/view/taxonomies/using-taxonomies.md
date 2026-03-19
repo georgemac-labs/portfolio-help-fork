@@ -16,13 +16,13 @@ By default, the definition view displays a table with the five columns:
 
 - **Color**: Each category is automatically assigned a color. You can change the color using the context menu.
 
-- **Actual Value**: The market value of a security on the current day. For a category, this is the summed market value of all securities assigned to that category. For example, as of 2024-07-08, the market value of Daimler Trucks is 20 shares x 36.36 EUR = 727.20 EUR, and for Mercedes: 10 shares x 65.47 EUR = 654.70 EUR. Thus, the total value for the category is 727.20 EUR + 654.70 EUR = 1381.90 EUR. Please note that there is a significant number of unassigned securities in `myTaxonomy`.Foreign securities (e.g. Amazon) are calculated in the base currency.
+- **Value**: The market value of a security on the current day. For a category, this is the summed market value of all securities assigned to that category. For example, as of 2024-07-08, the market value of Daimler Trucks is 20 shares x 36.36 EUR = 727.20 EUR, and for Mercedes: 10 shares x 65.47 EUR = 654.70 EUR. Thus, the total value for the category is 727.20 EUR + 654.70 EUR = 1381.90 EUR. Please note that there is a significant number of unassigned securities in `myTaxonomy`.Foreign securities (e.g. Amazon) are calculated in the base currency.
 
-- **Actual %**: The percentage of a security or category, relative to its immediate parent category. For example, 727.20 EUR of Daimler represents 52.62% of the value in its immediate parent category `Base Currency`. The 1381.90 EUR of the `Base Currency` category is 27.98% of the highest category `myTaxonomy`.
+- **%**: The percentage of a security or category, relative to its immediate parent category. For example, 727.20 EUR of Daimler represents 52.62% of the value in its immediate parent category `Base Currency`. The 1381.90 EUR of the `Base Currency` category is 27.98% of the highest category `myTaxonomy`.
 
-- **Actual % of Total**: The percentage of a security or category relative to the total value of the portfolio (including assigned and unassigned securities). For instance, the 1381.90 EUR of the `Base Currency` category represents only 6.25% of the total portfolio value.
+- **% of Total**: The percentage of a security or category relative to the total value of the portfolio (including assigned and unassigned securities). For instance, the 1381.90 EUR of the `Base Currency` category represents only 6.25% of the total portfolio value.
 
-With data icon :gear: gear icon, other fields could be added: Category Key, Symbol, ISIN, Note, Forex (Exchange Rate, Actual Value**), Expected return, and Attributes. The `Actual Value **` is the value of the security in the original currency without any conversion.
+With data icon :gear: gear icon, other fields could be added: Category Key, Symbol, ISIN, Note, Forex (Exchange Rate, Value**), Expected return, and Attributes. The `Value **` is the value of the security in the original currency without any conversion.
 
 The :material-upload: icon, `Export Data as CSV`, will save the table displayed on the screen as a CSV file.
 
@@ -42,7 +42,7 @@ Figure: Rebalancing view. {class=pp-figure}
 The first step in the rebalancing process involves entering the target `Allocation` for each category and the `Weight` of each security.
 
 - Allocation:  The desired percentage of each subcategory within the parent category of a taxonomy. The sum of allocations within a category must always add up to 100%.
-- Weight: The proportion or percentage that a security can contribute to its total value. A weight of 100% indicates that the security's entire value is used in calculating its actual contribution. Setting the weight to 50% means only half of the security's value contributes to its actual worth. Setting the weight to 0% removes the security from the category, placing it in the `Without Classification` list.
+- Weight: The proportion or percentage that a security can contribute to its total value. A weight of 100% indicates that the security's entire value is used in calculating its contribution. Setting the weight to 50% means only half of the security's value contributes to its weighted value. Setting the weight to 0% removes the security from the category, placing it in the `Without Classification` list.
 
 The rebalancing process will calculate the target value for each category based on its allocation and the total portfolio value. If the actual value deviates from the target value, the system computes the difference (delta). It then determines how much each security within the category should be increased or decreased based on its weight.
 
@@ -50,7 +50,7 @@ For example, the total value of `myTaxonomy` is 5292.73 EUR, consisting of 1376.
 
 To rebalance this subcategory, you would need to sell securities. For both Daimler and Mercedes, which each have a weight of 100%, you would sell 105.66 EUR worth of each security. This would correspond to approximately 2.9 securities of Daimler and 1.6 securities of Mercedes.
 
-If, for instance, the weight of Mercedes were set to 50%, its actual value would be reduced to 336.95 EUR (instead of 653.90 EUR), and the Base Currency subcategory's actual value would decrease to 1049.55 EUR (instead of 1376.90 EUR). In this scenario, the delta would then be 440.18 EUR. This could be achieved by selling 9.7 securities of Daimler and 2.6 securities of Mercedes, considering that only 50% of Mercedes is available for sale.
+If, for instance, the weight of Mercedes were set to 50%, its value would be reduced to 336.95 EUR (instead of 653.90 EUR), and the Base Currency subcategory's value would decrease to 1049.55 EUR (instead of 1376.90 EUR). In this scenario, the delta would then be 440.18 EUR. This could be achieved by selling 9.7 securities of Daimler and 2.6 securities of Mercedes, considering that only 50% of Mercedes is available for sale.
 
 ## Pie Chart
 
@@ -68,7 +68,7 @@ Figure: Donut chart of the portfolio. {class=pp-figure}
 
 ![](images/taxonomies-donut-chart.png)
 
-The donut chart represents the filtered result of the taxonomy. As such, it is the graphical representation of the column `Actual % of Total` in Figure 1. With the :gear: icon, you can choose to include the category `Without Classification`. 
+The donut chart represents the filtered result of the taxonomy. As such, it is the graphical representation of the column `% of Total` in Figure 1. With the :gear: icon, you can choose to include the category `Without Classification`.
 
 ## Tree map
 
