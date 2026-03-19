@@ -96,9 +96,11 @@ Figure:  Theme Settings - example of Light vs Dark theme. {class=pp-figure}
 
 ![](images/settings-theme.svg)
 
-In the `Settings > Theme` section, you can select either a Light or Dark theme (refer to Figure 4) or set it to automatic. If you choose the automatic option, your system clock will determine whether the light or dark theme will be applied.
+In the `Settings > Theme` section, you can choose either a Light or Dark theme (refer to Figure 4) or opt for the System setting. If you select the automatic option, the system clock will determine whether to apply the light or dark theme.
 
-The default font size is set to 9 pixels, but you can adjust it according to your preference, with options ranging from 8 pixels to 20 pixels.
+The default font size is set to 11 pixels, but you can adjust it according to your preference, with options ranging from 8 pixels to 20 pixels.
+
+With the Standard Color Value scheme, positive values are shown in green and negative values in red. However, this does not work very well for people with color vision deficiencies. In addition, in Asia red represents positive values. In the settings, you can now choose between three color schemes: `Green/Red` (standard), `Blue/Orange` and `Asia` (Red for gains / Green for losses).
 
 ### Formatting
 
